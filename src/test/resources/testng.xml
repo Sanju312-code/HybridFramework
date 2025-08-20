@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UserStorySuite" verbose="1" parallel="false">
+
+    <!-- Test Case: User Story Create -->
+    <test name="User Story Create">
+        <classes>
+            <class name="com.testcases.TestExecutor">
+                <methods>
+                    <include name="userstorycreate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test Case: User Story Delete -->
+    <test name="User Story Delete">
+        <classes>
+            <class name="com.testcases.TestExecutor">
+                <methods>
+                    <include name="userstorydelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
